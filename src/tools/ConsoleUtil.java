@@ -7,10 +7,6 @@ public class ConsoleUtil {
         System.out.println(string);
     }
 
-    public static void print(String string) {
-        System.out.print(string);
-    }
-
     public static int inputInt(String message) {
         int number = 0;
         boolean inputResult = false;

@@ -14,7 +14,6 @@ public class Player {
         this.unitCards = unitCards;
     }
 
-
     private String getAllCardsInfo() {
         String output = "";
 

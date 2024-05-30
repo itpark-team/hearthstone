@@ -14,19 +14,6 @@ public abstract class UnitCard {
         hasRetaliatoryStrike = true;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getHealthPoint() {
-        return healthPoint;
-    }
-
-    public int getDamagePoint() {
-        return damagePoint;
-    }
-
-
     public abstract String getInfo();
 
     protected abstract int getCalculateDamagePoint();

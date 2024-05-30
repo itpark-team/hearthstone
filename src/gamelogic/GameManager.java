@@ -104,7 +104,7 @@ public class GameManager {
                 int indexDefend = currentPair.getIndexDefend();
 
                 UnitCard attackUnitCard = player1.getUnitCards().get(indexAttack);
-                UnitCard defendUnitCard =  player2.getUnitCards().get(indexDefend);
+                UnitCard defendUnitCard = player2.getUnitCards().get(indexDefend);
 
                 attackUnitCard.attackOtherUnitCard(defendUnitCard);
             }
@@ -117,6 +117,9 @@ public class GameManager {
             player2.deleteDeadUnitCards();
 
             isRun = player1.isAlive() && player2.isAlive();
+            if (!isRun) {
+                break;
+            }
 
             player1.resetRetaliatoryStrikeForAllUnits();
 
@@ -135,7 +138,7 @@ public class GameManager {
                 int indexDefend = currentPair.getIndexDefend();
 
                 UnitCard attackUnitCard = player2.getUnitCards().get(indexAttack);
-                UnitCard defendUnitCard =  player1.getUnitCards().get(indexDefend);
+                UnitCard defendUnitCard = player1.getUnitCards().get(indexDefend);
 
                 attackUnitCard.attackOtherUnitCard(defendUnitCard);
             }
